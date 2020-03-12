@@ -1,0 +1,78 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: #555353;
+    background-color: #fafafa;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.user-info > div {
+    padding: 10px 0;
+}
+.user-image {
+    width: 208px;
+    height: 208px;  
+    border: 3px solid #f17515bd;
+    border-radius: 50%;
+}
+.user-image img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    padding: 4px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+.user-name {
+    font-size: 30px;
+}
+.symbol {
+    width: 20px; 
+    height: 20px;
+}
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+ul li:first-child { 
+    padding-left: 0;
+}
+.btn {
+    background-color: #fafafa;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #555353;
+}
+.following, .recomendations {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+.following {
+    padding: 5px 20px;
+    margin-left: 15px;
+}
+.more-actions {
+    border: none;
+}
+.bold-text {
+    font-weight: bold;
+}
+.pale-text{
+    color: #7c7878;
+}
+.user-description{
+    font-size: 20px;
+}

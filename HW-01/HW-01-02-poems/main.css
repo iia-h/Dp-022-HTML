@@ -1,0 +1,19 @@
+body {
+    font-family: 'Calibri';
+    font-size: 15.5pt;
+    width: 600px;
+    margin: auto;
+    color: #1F487E;
+}
+.text-red {
+    color: #F00;
+}
+p:nth-child(even) {
+    text-align: right;
+}
+p:first-child:first-letter {
+    font-size: 200%;
+}
+p:nth-child(4) { 
+    color: #000;
+}

@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: #FFFF00;
+    text-align: center;	
+    margin-top: 50px;
+}
+.line-one{
+    font-size: 8pt;
+}
+.line-two{
+    font-size: 9pt;
+}
+.line-three{
+    font-size: 9.5pt;
+}
+.line-four{
+    font-size: 11pt;
+}
+.line-five{
+    font-size: 11.5pt;
+}
+.line-six{
+    font-size: 14pt;
+}
+.line-seven{
+    font-size: 15.5pt;
+}
+.line-eight{
+    font-size: 18pt;
+}
+.line-nine{
+    font-size: 20pt;
+}
+.line-ten{
+    font-size: 21.5pt;
+}
+.line-eleven{
+    font-size: 24pt;
+}
+.line-twelve{
+    font-size: 26pt;
+}
+.line-thirteen{
+    font-size: 27.5pt;
+}
+.line-fourteen{
+    font-size: 36pt;
+}

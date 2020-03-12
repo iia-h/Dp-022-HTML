@@ -1,0 +1,24 @@
+body{
+    background: white;
+}
+.block{
+    width: 800px;
+    height: 600px;
+    background: rgb(74,74,74);
+    margin: auto;
+} 
+.text{
+    font-family: 'Baskerville No.2';
+    color: rgb(255,255,255);
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.font1{
+    text-decoration:line-through;
+    font-size: 50px;
+}
+.font2{
+    font-size: 230px;
+    
+}
