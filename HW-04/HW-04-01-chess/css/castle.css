@@ -1,0 +1,54 @@
+@keyframes castleAnima{
+    from{
+        transform: rotate(-720deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
+
+.castle{
+    width: 30px;
+	height: 0;
+	border-bottom: 50px solid black; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: relative;
+    top: 16px;
+    left: 20px;
+}
+
+.castle::before{
+    content: '';
+    display: block;
+	width: 50px;
+	height: 25px;
+    background: black;
+    border-radius: 20%;
+    position: relative;
+    top: -8px;
+    left: -10px;
+    animation: castleAnima 15s infinite alternate linear;
+}
+
+.castle::after{
+    content: '';
+    display: block;
+	width: 60px;
+	height: 20px;
+    background: black;
+    border-radius: 20%;
+    position: relative;
+    top:20px;
+    left: -16px;
+}
+
+.castle.white{
+    border-bottom-color: white;
+}
+.white.castle::before{
+    background-color: white;
+}
+.white.castle::after{
+    background-color: white;
+}

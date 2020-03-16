@@ -1,0 +1,53 @@
+@keyframes knightAnima {
+    0%   {left:0px; top:0px;}
+    25%  {left:100px; top:0px;}
+    50%  {left:100px; top:100px;}
+    75%  {left:0px; top:100px;}
+    100% {left:0px; top:0px;}
+  }
+
+.knight{
+    width: 0;
+	height: 0;
+	border-bottom: 65px solid black; 
+    border-left: 60px solid transparent;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    animation: knightAnima 5s 4 ease-in;
+}
+
+.knight::before{
+    content: '';
+    display: block;
+    width: 65px;
+	height: 25px;
+	background: black;
+	border-radius: 42%;
+    position: relative;
+    top:4px;
+    left: -61px;
+    transform: rotate(145deg);
+}
+
+.knight::after{
+    content: '';
+    display: block;
+	width: 70px;
+	height: 20px;
+    background: black;
+    border-radius: 20%;
+    position: relative;
+    top: 30px;
+    left: -65px;
+}
+
+.knight.white{
+    border-bottom-color: white;
+}
+.white.knight::before{
+    background-color: white;
+}
+.white.knight::after{
+    background-color: white;
+}

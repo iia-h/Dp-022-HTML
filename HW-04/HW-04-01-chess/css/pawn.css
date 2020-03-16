@@ -1,0 +1,65 @@
+@keyframes pawnAnima {
+    from{
+        transform: scale3d(.8,.8,.8);
+        }
+    to{
+        transform: scale3d(1,1,1);
+    }
+}
+.pawn{
+    border: 1px solid black;
+    border-radius: 40%;
+    width: 25px;
+    height: 10px;
+    position: relative;
+    top: 30px;
+    left: 32px;
+    transition: 5s top;
+    animation: pawnAnima 5s infinite alternate linear;
+}
+.pawn::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 45px solid black;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent; 
+    border-radius:10%;
+    position: relative;
+    top: -30px;
+    left: -12px;
+}
+.pawn:hover {
+    top: -40px;
+}
+.pawn::before{
+    content: '';
+    display: block;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
+    left:0px;
+
+}
+.black.pawn::before{
+    background-color: black;
+}
+.pawn.black{
+    background-color: black;
+}
+.pawn.white{
+    background-color: white;
+    border-color: white;
+}
+.white.pawn::before{
+    background-color: white;
+    border-color: white;
+
+}
+.white.pawn::after{
+    border-bottom-color: white;
+}

@@ -1,0 +1,62 @@
+@keyframes queenAnima{
+    from{
+        background-color: ghostwhite; 
+        top: -20px;
+    }
+    to{
+        background-color:black;
+        top: -13px;
+    }
+}
+.queen{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 24px;
+}
+
+.queen::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    position: relative;
+    top: 20px;
+    left: -5px;
+}
+
+.queen::before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 10px;
+    position: relative;
+    top: -15px;
+    left: -2.5px;
+    animation: queenAnima 2s infinite alternate linear;
+}
+
+.black.queen::before{
+    background-color: black;
+}
+
+.queen.black{
+    background-color: black;
+}
+
+.queen.white{
+    background-color: white;
+    border-color: white;
+}
+.white.queen::before{
+    background-color: white;
+}
+.white.queen::after{
+    border-bottom-color: white;
+}

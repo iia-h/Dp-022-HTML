@@ -1,0 +1,75 @@
+@keyframes bishopAnima {
+    from{
+        left:-3px;
+        background-color: rgb(255, 153, 0);
+        border-color:  rgb(255, 153, 0);
+    }
+    to{
+        left:3px;
+    }
+  }
+.bishop{
+    border: 1px solid black;
+    border-radius: 40%;
+    width: 20px;
+    height: 10px;
+    position: relative;
+    top: 30px;
+    left: 34px;
+    transition: 5s left;
+
+}
+.bishop:hover {
+    left: -45px;
+
+}
+
+.bishop::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    border-radius:10%;
+    position: relative;
+    top: -30px;
+    left: -10px;
+    transition: 50s left
+}
+
+.bishop::before{
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px;
+    border: 1px solid black;
+    border-radius: 50% 0% 50% 50%;
+    position: relative;
+    top: -24px;
+    left: -2px;
+    transform: rotate(-45deg);
+    animation: bishopAnima 2s infinite alternate linear;
+}
+
+.black.bishop::before{
+    background-color: black;
+}
+
+.bishop.black{
+    background-color: black;
+}
+
+.bishop.white{
+    background-color: white;
+    border-color: white;
+}
+.white.bishop::before{
+    background-color: white;
+    border-color: white;
+
+}
+.white.bishop::after{
+    border-bottom-color: white;
+}

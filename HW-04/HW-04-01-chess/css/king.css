@@ -1,0 +1,67 @@
+@keyframes kingAnima{
+    from{
+        transform: rotate(-30deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
+}
+
+.king{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 24px;
+    transition: 5s border-radius;
+}
+
+.king:hover{
+    border-radius: 0;
+}
+
+.king::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 40px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    position: relative;
+    top: 20px;
+    left: -5px;
+}
+
+.king::before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 10px;
+    position: relative;
+    top: -15px;
+    left: -2.5px;
+    animation: kingAnima 5s infinite alternate linear;
+}
+
+.black.king::before{
+    background-color: black;
+}
+
+.king.black{
+    background-color: black;
+}
+
+.king.white{
+    background-color: white;
+    border-color: white;
+}
+.white.king::before{
+    background-color: white;
+    animation-delay: 2s;
+}
+.white.king::after{
+    border-top-color: white;
+}
