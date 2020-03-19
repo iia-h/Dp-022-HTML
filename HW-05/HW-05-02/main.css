@@ -1,0 +1,124 @@
+header{
+    height: 50px;
+    background-color: rgb(250,250,251);
+}
+
+footer{
+    height: 200px;
+    background-color: #242729;
+}
+
+.bl-one{
+    height: 400px;
+    background-color: #ffcf10;
+}
+.bl-two{
+padding-top: 64px !important;
+padding-bottom: 64px !important;
+}
+
+.in-bl-two{
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.el{
+    height: 300px;
+    width: 280px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    background-color: rgb(255,255,255);
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.el-two{
+    align-self: flex-start;
+}
+
+.in-bl-three{
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(247,246,249);
+}
+
+.el-in-bl-three{
+    height: 200px;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(255,255,255);
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(37, 79, 90, 0.5);
+}
+.in-bl-four{
+    background-color: rgb(43, 45, 110);
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.el-in-bl-four{
+    margin-left: 50px;
+    margin-bottom: 150px;
+}
+.four-one{
+    height: 360px;
+    width: 380px;
+    background-color: rgb(255,255,255);
+    border-radius: 7px;
+}
+
+.four-two{
+    height: 400px;
+    width: 380px;
+    background-color: rgb(255,255,255);
+    border-radius: 7px;
+}
+
+.four-three{
+    height: 450px;
+    width: 380px;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 7px;
+}
+
+.four-three-one{
+    height: 100px;
+    border-bottom: 1px solid rgb(255,255,255);
+}
+
+.bl-five{
+    background-color: rgb(247,246,249);
+    height: 400px;
+}
+
+.bl-six{
+    height: 400px;
+}
+
+.bl-seven{
+    height: 400px;
+}
+
+.in-bl-eight{
+    height: 400px;
+    background-color: rgb(225,236,244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.el-in-bl-eight{
+    margin-left: 50px;
+    height: 100px;
+    width: 250px;
+    background-color: rgb(255,255,255);
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(37, 79, 90, 0.5);
+}

@@ -1,0 +1,51 @@
+
+.head-foot{
+    height: 100px;
+    background-color: rgb(253,233,217);
+}
+
+.container{
+    display: flex;
+}
+
+.sides{
+    width:100%;
+}
+
+.l-r-side{
+    background-color: rgb(183,221,233);
+    width: 200px;
+}
+
+.bl{
+    display: flex;
+}
+
+.box{
+    width: 100%;
+    background-color: rgb(219,230,240);
+}
+
+.five{
+    height: 200px;
+    background-color: rgb(191,191,191);
+}
+
+.el{
+    background-color: rgb(250,191,143);
+    height: 250px;
+}
+
+.el-one{
+    display: flex;
+}
+
+.inel{
+    width: 100%;
+    background-color: rgb(220,238,244);
+}
+
+.inel-one{
+    background-color: rgb(237,239,223);
+    width: 200%;
+}
