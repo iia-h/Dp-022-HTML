@@ -1,0 +1,36 @@
+.switch-third-off {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 38px;
+    left: -17px;
+    top: 90px;
+}
+  
+.slider-third-off {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dddddd;
+    transition: .4s;
+}
+  
+.slider-third-off::after {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 6px;
+    background-color: #ffffffdc;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider-third-off::after {
+    transform: translateX(56px);
+} 
+  

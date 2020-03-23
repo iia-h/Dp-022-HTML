@@ -1,0 +1,77 @@
+@import "bottom-first-off.css";
+@import "bottom-second-on.css";
+@import "bottom-second-off.css";
+@import "bottom-third-on.css";
+@import "bottom-third-off.css";
+
+body{
+  background-color: #f2f2f2;
+}
+/* The switch - the box around the slider */
+.switch-first-on {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 38px;
+  left: 35px;
+  top: 25px;
+}
+  
+  /* Hide default HTML checkbox */
+.hide input {
+  display:none;
+}
+  
+  /* The slider */
+.slider-first-on {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dddddd;
+  transition: .4s;
+}
+  
+.slider-first-on::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 40px;
+  bottom: 6px;
+  background-color: #fffffff5;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px rgba(65, 65, 65, 0.37);
+  transition: .4s;
+}
+.slider-first-on::after {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 85px;
+  bottom: 10px;
+  background-color: #44cc66;
+  border-radius: 50%;
+}
+
+input:checked + .slider-first-on::before {
+  transform: translateX(-36px);
+} 
+  
+/* Rounded sliders */
+.round {
+  border-radius: 34px;
+}
+  
+.little-round-on{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  left: -20px;
+  top: 18px;
+}
