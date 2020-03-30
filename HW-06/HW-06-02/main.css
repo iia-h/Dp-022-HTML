@@ -8,40 +8,77 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-.background{
-    background-color:#d2b48c;
-    width: 800px;
-    height: 350px;
-    border-radius: 15px;
+}
+
+.block{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.watch{
-    width: 750px;
-    height: 300px;
-    background-color: #333333;
+.block_border-radius_15px{
     border-radius: 15px;
-    font-family: 'orbitron light', sans-serif;
-    text-transform: uppercase;
-    font-size: 150px;
-    color: #e74c3c;
+}
+
+.block_size_800x350{
+    width: 800px;
+    height: 350px;
+}
+
+.block_color_tan{
+    background-color:#d2b48c;
+}
+
+.watch{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.watch_border-radius_15px{
+    border-radius: 15px;
+}
+
+.watch_background-color_jet{
+    background-color: #333333;
+}
+
+.watch_size_750x300{
+    width: 750px;
+    height: 300px;
+}
+
+.watch_font_orbitron{
+    font-family: 'orbitron light', sans-serif;
+}
+
+.watch_font-color_carmine{
+    color: #e74c3c;
+}
+
+.watch_font-size_130px{
+    font-size: 130px;
+}
+
 .time{
     display: flex;
-
 }
-.date{
+
+.watch__date{
     position: relative;
     top:35px;
-    font-size: 25px;
+}
+
+.watch__date_font_times{
     font-family: 'Times New Roman', Times, serif;
+}
+
+.watch__date_font-size_25px{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.watch__date_font-color_white{
     color: #ffffffe8;
 }

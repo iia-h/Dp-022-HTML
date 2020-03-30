@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+    }
+
+main{
+    display: grid;
+    grid-template-areas: "l-side el1 el2-4 r-side"
+    "l-side el5 el5 r-side";
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-rows: 2fr 1fr;
+    }
+
+.head-foot{
+    background-color: white;
+    background-image: radial-gradient(#f891a1 5px, transparent 5px);
+    background-size: 30px 30px;
+}
+
+.el2-4{
+    display: grid;
+    grid-template-areas: "el2 el3"
+    " el4 el4";
+    grid-template-columns: 2fr 1fr;
+}
+
+.left{
+    grid-area: l-side;
+    background: linear-gradient(to right, #ffffff, #b7dee8);
+}
+
+.el1{
+    grid-area: el1;
+    background-color: #dce6f1;
+
+}
+
+.el2{
+    grid-area: el2;
+    background-color: #ebf1de;
+}
+
+.el3{
+    grid-area: el3;
+    background-color: #daeef3;
+}
+
+.el4{
+    grid-area: el4;
+    background-color: #f891a1d2;
+}
+
+.el5{
+    grid-area: el5;
+    background-color: #bfbfbf;
+}
+
+.right{
+    grid-area: r-side;
+    background: linear-gradient(to left, #ffffff, #b7dee8);
+}
+
