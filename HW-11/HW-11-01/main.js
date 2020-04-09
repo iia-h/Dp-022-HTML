@@ -30,3 +30,24 @@ alert(calcDupl(str));
 // console.log(calcDupl('Indivisibilities'));
 // console.log(calcDupl('aA11'));
 // console.log(calcDupl('ABBA'));
+
+
+
+// let str = prompt('Enter the alphabetic characters and/or numeric digits.');
+// let counts = {}; // {} - объявление объекта
+// let symbol, i, count;
+// let len = str.length; // длина строки
+
+
+// for (i = 0; i < len; i++) {
+//   symbol = str[i];
+//   symbol = symbol.toLowerCase();
+//   count = counts[symbol];
+//   counts[symbol] = count ? count + 1 : 1;
+// } 
+
+// for (symbol in counts) {
+//   if (counts[symbol] > 1){
+//   alert('Символ "' + symbol + '" повторяется "' + counts[symbol] + '" раз/а.');
+// }
+// }
