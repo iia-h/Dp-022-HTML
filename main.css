@@ -38,7 +38,7 @@ a{
     transition: 0.3s all linear;
 
     }
-    .lessons li:nth-child(21){border-color: #8bc63e;}
+    .lessons li:nth-child(23){border-color: #8bc63e;}
     .lessons li:hover {border-left: 10px solid transparent;}
     /* .lessons li:nth-child(17):hover {border-right: 10px solid #f05d22;} */
   
